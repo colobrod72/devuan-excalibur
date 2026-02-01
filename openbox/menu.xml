@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="https://openbox.org/"
+ xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://openbox.org/">
+   <menu id="root-menu" label="Openbox 3">
+      <item label="Terminology" icon="/usr/share/icons/Fekete/48x48/apps/cantor.svg">
+        <action name="Execute">
+           <execute>terminology</execute>
+          </action>
+         </item>
+         <item label="Thunar" icon="/usr/share/icons/Fekete/48x48/apps/pcmanfm.svg">
+        <action name="Execute">
+           <execute>thunar</execute>
+          </action>
+         </item>
+         <item label="Volume" icon="/usr/share/icons/Fekete/48x48/apps/ksound.svg">
+        <action name="Execute">
+           <execute>pavucontrol</execute>
+          </action>
+         </item>
+         <item label="Gparted" icon="/usr/share/icons/Fekete/48x48/apps/gparted.svg">
+        <action name="Execute">
+           <execute>/usr/sbin/gparted</execute>
+          </action>
+         </item>
+         <item label="Veracrypt" icon="/usr/share/icons/Fekete/48x48/apps/abrt.svg">
+        <action name="Execute">
+           <execute>/usr/bin/veracrypt</execute>
+          </action>
+         </item>
+         <item label="Synaptic" icon="/usr/share/icons/Fekete/48x48/apps/synapse.svg">
+        <action name="Execute">
+           <execute>/usr/bin/synaptic-pkexec</execute>
+          </action>
+         </item>
+         <item label="Usb-write" icon="/usr/share/icons/Fekete/48x48/apps/MX USB Unmounter.svg">
+        <action name="Execute">
+           <execute>mintstick -m iso</execute>
+          </action>
+         </item>
+         <item label="Usb-format" icon="/usr/share/icons/Fekete/48x48/apps/flash.svg">
+        <action name="Execute">
+           <execute>mintstick -m format</execute>
+          </action>
+         </item>
+         <item label="Nitrogen" icon="/usr/share/icons/Fekete/48x48/apps/Advent.svg">
+        <action name="Execute">
+           <execute>nitrogen</execute>
+          </action>
+         </item>
+         <item label="Systemback" icon="/usr/share/icons/Fekete/48x48/apps/Systemback.svg">
+        <action name="Execute">
+           <execute>/usr/bin/systemback-sustart</execute>
+          </action>
+         </item>
+         <item label="Nekobox" icon="/usr/share/icons/Fekete/48x48/apps/apacheconf.svg">
+        <action name="Execute">
+           <execute>/opt/nekoray/nekobox</execute>
+          </action>
+         </item>
+         <item label="Screenshoter" icon="/usr/share/icons/Fekete/48x48/apps/applications-multimedia.svg">
+        <action name="Execute">
+           <execute>xfce4-screenshooter</execute>
+          </action>
+         </item>
+         <item label="Bleachbit" icon="/usr/share/icons/Fekete/48x48/apps/bleachbit.svg">
+        <action name="Execute">
+           <execute>bleachbit</execute>
+          </action>
+         </item>
+         <! - - This requires the presence of the 'obamenu' package to work - - >
+         <menu id="/Devuan"/>
+         <separator/>
+         <menu execute="/usr/bin/obamenu" id="applications-menu" label="Проги" icon="/usr/share/icons/Fekete/48x48/apps/calibre-gui.svg"/>
+         <separator/>
+         <item label="Obconf" icon="/usr/share/icons/Fekete/48x48/apps/krename.svg">
+            <action name="Execute">
+               <execute>obconf</execute>
+            </action>
+           </item>
+         <item label="Menu-xml" icon="/usr/share/icons/Fekete/48x48/apps/bugs-everywhere.svg">
+            <action name="Execute">
+               <execute>mousepad .config/openbox/menu.xml</execute>
+            </action>
+           </item>
+         <item label="RC-hml" icon="/usr/share/icons/Fekete/48x48/apps/calligragemini.svg">
+            <action name="Execute">
+               <execute>mousepad .config/openbox/rc.xml</execute>
+            </action>
+           </item>
+         <item label="Onekey" icon="/usr/share/icons/Fekete/48x48/apps/gnome-about-logo.svg">
+            <action name="Execute">
+               <execute>/home/zx/.wallet</execute>
+            </action>
+           </item>
+           <item label="Reconfigure" icon="/usr/share/icons/Fekete/48x48/apps/claws.svg">
+              <action name="Reconfigure"/>
+            </item>
+            <item label="Restart" icon="/usr/share/icons/Fekete/48x48/apps/licq.svg">
+              <action name="Restart"/>
+            </item>
+            <separator/>
+              <item label="Shutdown" icon="/usr/share/icons/Fekete/48x48/apps/kshutdown.svg">
+      	<action name="Execute"><command>obsession-logout</command>
+      	</action>
+        </item>
+        </menu>
+      </openbox_menu>

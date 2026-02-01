@@ -1,0 +1,68 @@
+conky.config = {
+-- Vuu-do conkyrc.
+-- Thunar is set to not draw the desktop by default, if you change that you might need to edit
+-- the "own_window_type" setting below from "normal" to "desktop". 
+
+	alignment = 'top_left',
+	background = true,
+--border_margin 5
+	border_width = 5,
+	default_color = '#E3A206',
+	double_buffer = true,
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+	gap_x = 10,
+	gap_y = 10,
+	maximum_width = 1000,
+	minimum_width = 800,
+	no_buffers = true,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_title = 'conky',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = true,
+	own_window_type = 'normal',--# normal /override /desktop 
+	text_buffer_size = 8000,
+	total_run_times = 0,
+	update_interval = 1,
+	uppercase = false,
+	use_xft = true,
+	xftalpha = 1,
+	font = 'Nimbus Roman Italic:pixelsize=16',
+
+
+
+};
+
+conky.text = [[
+
+${voffset -5}${font Nimbus Roman Bold Italic:pixelsize=24}  ${time %A %B %d, %Y %l:%M %P}${font}
+   ----------------------------------------------------------------
+${voffset +2}${font Nimbus Roman Italic:pixelsize=20}  RAM: ${mem /} / ${memmax /}
+    HD: ${fs_used /} / ${fs_size /}${voffset -7}${font Nimbus Roman Italic:pixelsize=16}${alignc}
+     --------------------------------------
+       Инфа о плеере "cmus"
+     Alt+t - открываешь терминал
+   Вводишь alias и нажимаешь ENTER
+  alias(m) - запускаешь плеер "cmus" 
+ TAB - переключение между вкладками
+  X - запуск воспроизведения
+   V - остановка воспроизведения
+    C - пауза
+      - уменьшение громкости на 10%
+        + увеличение громкости на 10%
+        alias i - инфа о системе
+     alias k - вирт.клавиатура
+   alias f - файловый менеджер
+  alias s - пакетный менеджер
+ alias r - перезагрузка системы
+alias b - очистка сис. от админа
+ alias c - очистка кеша памяти
+   alias u - обновление системы
+    alias l - очистка логов системы
+      alias p - выключение системы
+# ${if_running exaile}${font Nimbus Roman Italic:pixelsize=14}now playing :  ${execi 10 exaile --get-title}  –  ${execi 10 exaile --get-artist}$endif
+# Un-comment the above line if you'd like conky to display artist/track info while Exaile is running.
+
+]];

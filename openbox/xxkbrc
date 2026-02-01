@@ -1,0 +1,9 @@
+XXkb.mainwindow.type: tray
+XXkb.xpm.path: /usr/share/xxkb
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.appicon: yes
+XXkb.mainwindow.in_tray: GNOME2
+XXkb.mainwindow.geometry: 15x15+0+0
+XXkb.mainwindow.image.1: en15.xpm
+XXkb.mainwindow.image.2: ru15.xpm
+XXkb.button.enable: no

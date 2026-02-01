@@ -1,0 +1,8 @@
+/usr/lib/policykit-1/polkit-agent-helper-1 &
+sh /home/zx/.xrandr.sh &
+sleep 1 && xxkb &
+sleep 1 && connman-gtk &
+sleep 2 && nitrogen --restore &
+sleep 3 && tint2 &
+sleep 4 && compton &
+sleep 5 && conky &
