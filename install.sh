@@ -80,13 +80,13 @@ export_packages() {
         "libnotify"
         "rofi dunst feh lxappearance network-manager-applet redshift"
         "thunar thunar-archive-plugin thunar-volman"
-        "gvfs dialog mtools smbclient cifs-utils unzip"
+        "gvfs dialog mtools cifs-utils unzip"
         "pavucontrol pulsemixer pamixer pipewire-pulse"
         "avahi acpi acpid xfce4-power-manager"
         "flameshot qimgv firefox micro xdg-user-dirs-gtk lua-language-server"
         "suckless-tools eza"
         "ttf-font-awesome terminus-font"
-        "cmake meson ninja curl pkgconf"
+        "cmake meson curl pkgconf"
     )
     
     echo "ARCH LINUX:"
@@ -101,7 +101,7 @@ export_packages() {
         "libnotify libnotify-devel"
         "rofi dunst feh lxappearance NetworkManager-gnome redshift"
         "thunar thunar-archive-plugin thunar-volman"
-        "gvfs dialog mtools samba-client cifs-utils unzip"
+        "gvfs dialog mtools cifs-utils unzip"
         "pavucontrol pulsemixer pamixer pipewire-pulseaudio"
         "avahi acpi acpid xfce4-power-manager"
         "flameshot qimgv firefox micro xdg-user-dirs-gtk lua-language-server"
@@ -205,7 +205,7 @@ fi
 # ============================================
 PACKAGES_CORE=(
     awesome awesome-extra awesome-doc
-    xorg xorg-dev xbacklight xbindkeys xvkbd xinput
+    xorg xorg-dev xbacklight xbindkeys xxkb xinput
     build-essential xdotool
     libnotify-bin libnotify-dev
 )
@@ -216,7 +216,7 @@ PACKAGES_UI=(
 
 PACKAGES_FILE_MANAGER=(
     thunar thunar-archive-plugin thunar-volman
-    gvfs-backends dialog mtools smbclient cifs-utils unzip
+    gvfs-backends dialog mtools cifs-utils unzip
 )
 
 PACKAGES_AUDIO=(
@@ -237,7 +237,7 @@ PACKAGES_FONTS=(
 )
 
 PACKAGES_BUILD=(
-    cmake meson ninja-build curl pkg-config wget
+    cmake meson curl pkg-config wget
 )
 
 # ============================================
