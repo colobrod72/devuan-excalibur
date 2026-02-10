@@ -1,0 +1,14 @@
+sudo sh -c 'echo "deb [arch=64 signed-by=/etc/apt/keyrings/systemback.gpg] http://mirrors.bwbot.org/ stable main" > /etc/apt/sources.list.d/systemback.list'
+
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80'  --recv-key 50B2C005A67B264F
+
+sudo apt-key export A67B264F | sudo gpg --dearmour -o /etc/apt/keyrings/systemback.gpg
+
+sudo apt-key del A67B264F
+
+sudo apt update
+sudo apt install systemback
+
+sudo thunar /usr/share/systemback/lang  (systemback_ru.qm~ переименовать)  
+размер fail.png(640x480) - создать свой фон (splash.png)
+
