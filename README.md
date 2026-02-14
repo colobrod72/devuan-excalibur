@@ -1,9 +1,6 @@
 Awesome_WM -configuration.......
- +-+-+-+-+-+-+-+-+ 
  |C|o|l|o|b|r|o|d|7|2| 
- +-+-+-+-+-+-+-+-+-+-+-+-+-+ 
- |a|w|e|s|o|m|e|w|m| |s|e|t|u|p|  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+ 
+ |a|w|e|s|o|m|e|w|m| |s|e|t|u|p| 
 
 ## 🔧 Configuration Files
 
