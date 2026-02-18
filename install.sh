@@ -10,6 +10,7 @@ echo "
  +-+-+-+-+-+-+-+-+-+-+-+-+-+                                                                            
 "
 sleep 2s
+sudo cp debian.list /etc/apt/sources.list.d
 mkdir /home/zx/.config
 cp -r awesome /home/zx/.config
 sudo apt update -y
