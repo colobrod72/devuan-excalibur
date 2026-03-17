@@ -19,7 +19,7 @@ sudo apt autoremove -y
 sleep 1s
 echo "${YELLOW}Продолжаем установку ${NOCOLOR}Работаем дальше"
 sleep 2s
-sudo apt install -y  linux-headers-$(dpkg --print-architecture) awesome xserver-xorg xinit lightdm lxrandr lxpolkit polkitd pkexec network-manager-gnome rofi dunst feh redshift lxappearance network-manager-applet thunar thunar-archive-plugin pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf awesome-extra awesome-doc pluma bleachbit terminology lxterminal neowofetch mousepad
+sudo apt install -y  linux-headers-$(dpkg --print-architecture) awesome xserver-xorg xinit lightdm lxrandr lxpolkit polkitd pkexec network-manager-gnome rofi dunst feh redshift lxappearance network-manager-applet thunar thunar-archive-plugin pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf awesome-extra awesome-doc geany geany-common bleachbit terminology neowofetch mousepad
 echo "${YELLOW}Грузим дальше!!"
 sleep 2s
 echo "${YELLOW}Пакеты загрузились ${NOCOLOR}Хокей ${RED}Приятной работы!! ${YELLOW}Перезагружаемся!!"
