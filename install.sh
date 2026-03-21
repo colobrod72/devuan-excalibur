@@ -12,6 +12,9 @@ echo "
 sleep 2s
 mkdir /home/zx/.config
 cp -r awesome /home/zx/.config
+cd themes && tar xvzf Xeno-gtk.tar.gz && sudo cp -r Xeno-gtk /usr/share/themes && cd ..
+cd icons && tar xvf Fekete.tar.xz && sudo cp -r Fekete /usr/share/icons && cd ..
+sleep 1s
 sudo pacman -Syu
 echo "${YELLOW}Продолжаем установку ${NOCOLOR}Работаем дальше"
 sleep 2s
