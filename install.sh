@@ -10,17 +10,12 @@ echo "
  +-+-+-+-+-+-+-+-+-+-+-+-+-+                                                                            
 "
 sleep 2s
-sudo cp debian.list /etc/apt/sources.list.d
 mkdir /home/zx/.config
 cp -r awesome /home/zx/.config
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt autoremove -y
-sleep 1s
+sudo pacman -Syu
 echo "${YELLOW}Продолжаем установку ${NOCOLOR}Работаем дальше"
 sleep 2s
-sudo apt install -y  linux-headers-$(dpkg --print-architecture) awesome xserver-xorg xinit lightdm lxrandr lxpolkit polkitd pkexec network-manager-gnome rofi dunst feh redshift lxappearance network-manager-applet thunar thunar-archive-plugin pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf awesome-extra awesome-doc geany geany-common bleachbit terminology neowofetch mousepad
+sudo pacman -S awesome xorg xorg-xinit lxrandr polkit rofi dunst feh redshift lxappearance network-manager-applet thunar thunar-archive-plugin xarchiver pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf geany bleachbit terminology fastfetch mousepad
 echo "${YELLOW}Грузим дальше!!"
 sleep 2s
 echo "${YELLOW}Пакеты загрузились ${NOCOLOR}Хокей ${RED}Приятной работы!! ${YELLOW}Перезагружаемся!!"
-sleep 3s
