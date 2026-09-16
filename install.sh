@@ -18,7 +18,7 @@ sleep 1s
 sudo pacman -Syu
 echo "${YELLOW}Продолжаем установку ${NOCOLOR}Работаем дальше"
 sleep 2s
-sudo pacman -S awesome xorg xorg-xinit lxrandr polkit rofi dunst feh redshift lxappearance network-manager-applet thunar thunar-archive-plugin xarchiver pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf geany bleachbit terminology fastfetch mousepad
+sudo pacman -S awesome xorg xorg-xinit lxrandr polkit rofi dunst feh redshift lxappearance thunar thunar-archive-plugin xarchiver picom pavucontrol pulsemixer pamixer pipewire-pulse flameshot xdg-user-dirs-gtk pkgconf geany bleachbit terminology fastfetch mousepad
 echo "${YELLOW}Грузим дальше!!"
 sleep 2s
 echo "${YELLOW}Пакеты загрузились ${NOCOLOR}Хокей ${RED}Приятной работы!! ${YELLOW}Перезагружаемся!!"
