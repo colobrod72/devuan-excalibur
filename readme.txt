@@ -30,7 +30,7 @@ sudo apt install meson g++ just greetd dbus libwayland-dev wayland-protocols lib
   <---- Install_System_Live: Debian_Linux MangoWm ----->
           ==========================
           
-     sudo apt install meson cmake libdrm-dev wayland-protocols libweston-16-dev glslang-tools spirv-tool libxcb-icccm4-dev libcjson-dev
+     sudo apt install meson cmake libdrm-dev wayland-protocols libweston-16-dev glslang-tools spirv-tools libxcb-icccm4-dev libcjson-dev
           
      git clone -b 0.20.2 https://gitlab.freedesktop.org/wlroots/wlroots.git
 cd wlroots
