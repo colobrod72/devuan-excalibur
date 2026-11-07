@@ -30,14 +30,18 @@ sudo apt install meson g++ just greetd dbus libwayland-dev wayland-protocols lib
   <---- Install_System_Live: Debian_Linux MangoWm ----->
           ==========================
           
-     sudo apt install meson cmake libdrm-dev wayland-protocols libweston-16-dev glslang-tools spirv-tools libxcb-icccm4-dev libcjson-dev
+     sudo apt install meson cmake libdrm-dev wayland-protocols
+   libweston-16-dev glslang-tools spirv-tools libxcb-icccm4-dev libcjson-dev
           
+     deb http://ftp.de.debian.org/debian sid main
+     sudo apt update -y && sudo apt install -y libwlroots-0.20-dev
      git clone -b 0.20.2 https://gitlab.freedesktop.org/wlroots/wlroots.git
 cd wlroots
 meson build -Dprefix=/usr
 sudo ninja -C build install
 
 git clone -b 0.5 https://github.com/wlrfx/scenefx.git
+libscenefx-0.5
 cd scenefx
 meson build -Dprefix=/usr
 sudo ninja -C build install
@@ -51,7 +55,14 @@ mkdir -p ~/.config/mango
 
 cp /etc/mango/config.conf ~/.config/mango/config.conf
 
+sudo systemctl enable --now greetd
+
 mango
+
+                                      <-------- Butter_Sway_Install --------->
+                    git clone https://justaguy.dev/butter/sway.git
+                    cd sway
+              ./install.sh
 
 
         <------ Autologin_Arch_Linux Greetd ------>
@@ -62,4 +73,32 @@ sudo nano /etc/systemd/system/getty@tty1.service.d/autologin.conf
 [Service]
 ExecStart=
 ExecStart=-/usr/bin/agetty --noreset --noclear --autologin username - ${TERM}
+
+
+
+
+sudo apt install -y build-essential dkms linux-headers-$(uname -r) pkg-config libglvnd-dev
+
+echo -e "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+sudo update-initramfs -u
+
+cd /tmp
+wget https://us.download.nvidia.com/XFree86/Linux-x86_64/580.173.02/NVIDIA-Linux-x86_64-580.173.02.run
+chmod +x NVIDIA-Linux-x86_64-580.173.02.run
+sudo ./NVIDIA-Linux-x86_64-580.173.02.run --dkms --no-x-check --no-nouveau-check --silent
+sudo reboot 
+nvidia smi
+
+
+
+
+
+
+
+
+
+
+
+
+
 
